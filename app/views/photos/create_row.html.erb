@@ -1,0 +1,18 @@
+<h1>Your new photo added</h1>
+<img src="<%= @showpic.source %>">
+
+<p><%= @showpic.caption %></p>
+
+<form action="http://localhost:3000/photos">
+  <div>
+    <label for="photo_caption">Caption:</label>
+    <input id="photo_caption" type="text" name="the_caption">
+  </div>
+  <div>
+    <label for="photo_image_url">Image URL:</label>
+    <input id="photo_image_url" type="text" name="the_source">
+  </div>
+  <div>
+    <button>Back</button>
+  </div>
+</form>
